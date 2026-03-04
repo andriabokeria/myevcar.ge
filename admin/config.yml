@@ -1,6 +1,6 @@
 backend:
   name: git-gateway
-  branch: main # ან main, შეამოწმე VS Code-ში
+  branch: master # ან main, შეამოწმე VS Code-ში
 
 media_folder: "images"
 public_folder: "/images"
