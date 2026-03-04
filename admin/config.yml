@@ -4,8 +4,8 @@ backend:
 
 publish_mode: editorial_workflow
 
-media_folder: "assets/images"
-public_folder: "/assets/images"
+media_folder: "images"
+public_folder: "/images"
 
 collections:
   - name: "translations"
@@ -58,3 +58,11 @@ collections:
               - {label: "აპლიკაციის ქვესათაური", name: "appSubtitle", widget: "text"}
               - {label: "აპლიკაციის ნაბიჯი 1", name: "appStep1Title", widget: "string"}
               - {label: "აპლიკაციის ნაბიჯი 2", name: "appStep2Title", widget: "string"}
+  - name: "site_media"
+    label: "სურათები"
+    files:
+      - label: "მთავარი ლოგო"
+        name: "logos"
+        file: "translations.json"
+        fields:
+          - { label: "ლოგო", name: "logo", widget: "image" }
