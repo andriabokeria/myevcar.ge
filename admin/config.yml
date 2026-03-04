@@ -1,0 +1,22 @@
+collections:
+  - name: "translations"
+    label: "თარგმნები"
+    files:
+      - label: "მთავარი გვერდი"
+        name: "index_page"
+        file: "translations.json"
+        fields:
+          - label: "English"
+            name: "en"
+            widget: "object"
+            fields:
+              - { label: "Hero Title", name: "heroTitle", widget: "string" }
+              - { label: "Hero Subtitle", name: "heroSubtitle", widget: "text" }
+              - { label: "Promo Title", name: "promoTitle", widget: "string" }
+          - label: "Georgian"
+            name: "ka"
+            widget: "object"
+            fields:
+              - { label: "ჰერო სათაური", name: "heroTitle", widget: "string" }
+              - { label: "ჰერო აღწერა", name: "heroSubtitle", widget: "text" }
+              - { label: "პრომო სათაური", name: "promoTitle", widget: "string" }
