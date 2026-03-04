@@ -1,22 +1,58 @@
+backend:
+  name: git-gateway
+  branch: master # ან main, შეამოწმე VS Code-ში
+
+media_folder: "images"
+public_folder: "/images"
+
 collections:
   - name: "translations"
-    label: "თარგმნები"
+    label: "საიტის კონტენტი"
     files:
-      - label: "მთავარი გვერდი"
-        name: "index_page"
+      - label: "მთავარი გვერდის ტექსტები"
+        name: "home_texts"
         file: "translations.json"
         fields:
-          - label: "English"
-            name: "en"
+          - name: "en"
+            label: "English (EN)"
             widget: "object"
             fields:
-              - { label: "Hero Title", name: "heroTitle", widget: "string" }
-              - { label: "Hero Subtitle", name: "heroSubtitle", widget: "text" }
-              - { label: "Promo Title", name: "promoTitle", widget: "string" }
-          - label: "Georgian"
-            name: "ka"
+              - {label: "Page Title", name: "pageTitle", widget: "string"}
+              - {label: "Hero 1 Title", name: "heroTitle", widget: "string"}
+              - {label: "Hero 1 Subtitle", name: "heroSubtitle", widget: "text"}
+              - {label: "Hero 2 Title", name: "heroTitleTwo", widget: "string"}
+              - {label: "Hero 2 Subtitle", name: "heroSubtitleTwo", widget: "text"}
+              - {label: "Hero 3 Title", name: "heroTitleThree", widget: "string"}
+              - {label: "Hero 4 Title", name: "heroTitleFour", widget: "string"}
+              - {label: "Promo Title", name: "promoTitle", widget: "string"}
+              - {label: "Video Title", name: "videoSectionTitle", widget: "string"}
+              - {label: "Video Text", name: "videoSectionText", widget: "text"}
+              - {label: "Feature 1", name: "feat1", widget: "string"}
+              - {label: "Feature 2", name: "feat2", widget: "string"}
+              - {label: "Feature 3", name: "feat3", widget: "string"}
+              - {label: "App Title", name: "appTitle", widget: "string"}
+              - {label: "App Subtitle", name: "appSubtitle", widget: "text"}
+              - {label: "App Step 1", name: "appStep1Title", widget: "string"}
+              - {label: "App Step 2", name: "appStep2Title", widget: "string"}
+
+          - name: "ka"
+            label: "ქართული (KA)"
             widget: "object"
             fields:
-              - { label: "ჰერო სათაური", name: "heroTitle", widget: "string" }
-              - { label: "ჰერო აღწერა", name: "heroSubtitle", widget: "text" }
-              - { label: "პრომო სათაური", name: "promoTitle", widget: "string" }
+              - {label: "გვერდის სათაური", name: "pageTitle", widget: "string"}
+              - {label: "მთავარი სათაური 1", name: "heroTitle", widget: "string"}
+              - {label: "ქვესათაური 1", name: "heroSubtitle", widget: "text"}
+              - {label: "მთავარი სათაური 2", name: "heroTitleTwo", widget: "string"}
+              - {label: "ქვესათაური 2", name: "heroSubtitleTwo", widget: "text"}
+              - {label: "მთავარი სათაური 3", name: "heroTitleThree", widget: "string"}
+              - {label: "მთავარი სათაური 4", name: "heroTitleFour", widget: "string"}
+              - {label: "პრომო სათაური", name: "promoTitle", widget: "string"}
+              - {label: "ვიდეოს სათაური", name: "videoSectionTitle", widget: "string"}
+              - {label: "ვიდეოს ტექსტი", name: "videoSectionText", widget: "text"}
+              - {label: "ფუნქცია 1", name: "feat1", widget: "string"}
+              - {label: "ფუნქცია 2", name: "feat2", widget: "string"}
+              - {label: "ფუნქცია 3", name: "feat3", widget: "string"}
+              - {label: "აპლიკაციის სათაური", name: "appTitle", widget: "string"}
+              - {label: "აპლიკაციის ქვესათაური", name: "appSubtitle", widget: "text"}
+              - {label: "აპლიკაციის ნაბიჯი 1", name: "appStep1Title", widget: "string"}
+              - {label: "აპლიკაციის ნაბიჯი 2", name: "appStep2Title", widget: "string"}
