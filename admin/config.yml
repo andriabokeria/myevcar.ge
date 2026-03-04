@@ -1,17 +1,19 @@
 backend:
   name: git-gateway
-  branch: master # ან main, შეამოწმე VS Code-ში
+  branch: master # ან main, გააჩნია რა გქვია GitHub-ზე
 
-media_folder: "images"
-public_folder: "/images"
+publish_mode: editorial_workflow
+
+media_folder: "assets/images"
+public_folder: "/assets/images"
 
 collections:
   - name: "translations"
     label: "საიტის კონტენტი"
     files:
       - label: "მთავარი გვერდის ტექსტები"
-        name: "home_texts"
-        file: "translations.json"
+        name: "home_page"
+        file: "translations.json" # <--- აქ არ დაუწერო /admin/! თუ translations.json მთავარ საქაღალდეშია.
         fields:
           - name: "en"
             label: "English (EN)"
