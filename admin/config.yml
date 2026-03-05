@@ -28,13 +28,25 @@ collections:
               - { label: "DC Description", name: "dcDesc", widget: "string" }
               - { label: "About Label", name: "about", widget: "string" }
               - { label: "Contact Label", name: "contact", widget: "string" }
-              - {label: "Hero 1 Title", name: "heroTitle", widget: "string"}
-              - {label: "Hero 1 Subtitle", name: "heroSubtitle", widget: "text"}
-              - {label: "Hero 2 Title", name: "heroTitleTwo", widget: "string"}
-              - {label: "Hero 2 Subtitle", name: "heroSubtitleTwo", widget: "text"}
-              - {label: "Hero 3 Title", name: "heroTitleThree", widget: "string"}
-              - {label: "Hero 4 Title", name: "heroTitleFour", widget: "string"}
-              - {label: "Promo Title", name: "promoTitle", widget: "string"}
+              - { label: "Contact Modal Title", name: "contact", widget: "string" }
+              - { label: "Input Placeholder: Name", name: "contactName", widget: "string" }
+              - { label: "Input Placeholder: Email", name: "contactEmail", widget: "string" }
+              - { label: "Input Placeholder: Message", name: "contactMsg", widget: "string" }
+              - { label: "Contact Button", name: "contactBtn", widget: "string" }
+             # Slide 1
+              - { label: "Slide 1 Title", name: "heroTitle", widget: "string" }
+              - { label: "Slide 1 Subtitle", name: "heroSubtitle", widget: "text" }
+              # Slide 2
+              - { label: "Slide 2 Title", name: "heroTitleTwo", widget: "string" }
+              - { label: "Slide 2 Subtitle", name: "heroSubtitleTwo", widget: "text" }
+              # Slide 3
+              - { label: "Slide 3 Title", name: "heroTitleThree", widget: "string" }
+              - { label: "Slide 3 Subtitle", name: "heroSubtitleThree", widget: "text" }
+              # Slide 4
+              - { label: "Slide 4 Title", name: "heroTitleFour", widget: "string" }
+              - { label: "Slide 4 Subtitle", name: "heroSubtitleFour", widget: "text" }
+              # Promo
+              - { label: "Promo Section Title", name: "promoTitle", widget: "string" }
               - {label: "Video Title", name: "videoSectionTitle", widget: "string"}
               - {label: "Video Text", name: "videoSectionText", widget: "text"}
               - {label: "Feature 1", name: "feat1", widget: "string"}
@@ -44,7 +56,6 @@ collections:
               - {label: "App Subtitle", name: "appSubtitle", widget: "text"}
               - {label: "App Step 1", name: "appStep1Title", widget: "string"}
               - {label: "App Step 2", name: "appStep2Title", widget: "string"}
-
           - name: "ka"
             label: "ქართული (KA)"
             widget: "object"
@@ -58,13 +69,23 @@ collections:
               - { label: "DC აღწერა", name: "dcDesc", widget: "string" }
               - { label: "ჩვენს შესახებ", name: "about", widget: "string" }
               - { label: "კონტაქტი", name: "contact", widget: "string" }
-              - {label: "მთავარი სათაური 1", name: "heroTitle", widget: "string"}
-              - {label: "ქვესათაური 1", name: "heroSubtitle", widget: "text"}
-              - {label: "მთავარი სათაური 2", name: "heroTitleTwo", widget: "string"}
-              - {label: "ქვესათაური 2", name: "heroSubtitleTwo", widget: "text"}
-              - {label: "მთავარი სათაური 3", name: "heroTitleThree", widget: "string"}
-              - {label: "მთავარი სათაური 4", name: "heroTitleFour", widget: "string"}
-              - {label: "პრომო სათაური", name: "promoTitle", widget: "string"}
+              - { label: "კონტაქტის ფანჯრის სათაური", name: "contact", widget: "string" }
+              - { label: "მინიშნება: სახელი", name: "contactName", widget: "string" }
+              - { label: "მინიშნება: ელ-ფოსტა", name: "contactEmail", widget: "string" }
+              - { label: "მინიშნება: შეტყობინება", name: "contactMsg", widget: "string" }
+              - { label: "ღილაკი: გაგზავნა", name: "contactBtn", widget: "string" }
+              # Slide 1
+              - { label: "სლაიდი 1 - სათაური", name: "heroTitle", widget: "string" }
+              - { label: "სლაიდი 1 - ქვესათაური", name: "heroSubtitle", widget: "text" }
+              # Slide 2
+              - { label: "სლაიდი 2 - სათაური", name: "heroTitleTwo", widget: "string" }
+              - { label: "სლაიდი 2 - ქვესათაური", name: "heroSubtitleTwo", widget: "text" }
+              # Slide 3
+              - { label: "სლაიდი 3 - სათაური", name: "heroTitleThree", widget: "string" }
+              - { label: "სლაიდი 3 - ქვესათაური", name: "heroSubtitleThree", widget: "text" }
+              # Slide 4
+              - { label: "სლაიდი 4 - სათაური", name: "heroTitleFour", widget: "string" }
+              - { label: "სლაიდი 4 - ქვესათაური", name: "heroSubtitleFour", widget: "text" }
               - {label: "ვიდეოს სათაური", name: "videoSectionTitle", widget: "string"}
               - {label: "ვიდეოს ტექსტი", name: "videoSectionText", widget: "text"}
               - {label: "ფუნქცია 1", name: "feat1", widget: "string"}
@@ -74,11 +95,17 @@ collections:
               - {label: "აპლიკაციის ქვესათაური", name: "appSubtitle", widget: "text"}
               - {label: "აპლიკაციის ნაბიჯი 1", name: "appStep1Title", widget: "string"}
               - {label: "აპლიკაციის ნაბიჯი 2", name: "appStep2Title", widget: "string"}
+              
   - name: "site_media"
-    label: "სურათები"
+    label: "მედია ფაილები"
     files:
       - label: "ლოგო და ბრენდინგი"
         name: "branding"
         file: "translations.json"
         fields:
-          - { label: "საიტის ლოგო", name: "logo", widget: "image" }
+          - { label: "მთავარი ლოგო", name: "logo", widget: "image" }
+          - { label: "სლაიდი 1 (სურათი)", name: "slide1Img", widget: "image" }
+          - { label: "სლაიდი 2 (სურათი)", name: "slide2Img", widget: "image" }
+          - { label: "სლაიდი 3 (სურათი)", name: "slide3Img", widget: "image" }
+          - { label: "სლაიდი 4 (სურათი)", name: "slide4Img", widget: "image" } 
+          - { label: "პრომო სექცია (სურათი)", name: "promoImg", widget: "image" }

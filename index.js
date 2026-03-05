@@ -86,6 +86,7 @@ document.addEventListener('DOMContentLoaded', function () {
         localStorage.setItem('currentLang', lang);
         document.documentElement.setAttribute('lang', lang);
 
+        // --- ტექსტების შეცვლა ---
         document.querySelectorAll('[data-i18n]').forEach(element => {
             const key = element.getAttribute('data-i18n');
             if (translations[lang] && translations[lang][key]) {
@@ -97,10 +98,19 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         });
 
+        // --- სურათების შეცვლა (ეს ნაწილი ჩაამატე) ---
+        document.querySelectorAll('[data-i18n-src]').forEach(img => {
+            const key = img.getAttribute('data-i18n-src');
+            // სურათი შეიძლება იყოს პირდაპირ translations ობიექტში ან კონკრეტულ ენაში
+            const imgSrc = translations[lang][key] || translations[key];
+            if (imgSrc) {
+                img.src = imgSrc;
+            }
+        });
+
         allLangOptions.forEach(opt => opt.classList.toggle('active', opt.dataset.lang === lang));
         updateLanguageButton(lang);
     }
-
     function updateLanguageButton(lang) {
         if (!langToggle) return;
         const currentFlagEl = langToggle.querySelector('.current-flag');
