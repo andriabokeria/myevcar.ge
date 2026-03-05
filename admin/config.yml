@@ -49,6 +49,9 @@ collections:
               - { label: "Promo Section Title", name: "promoTitle", widget: "string" }
               - {label: "Compatibility Title", name: "compatibleWith", widget: "string"}
               - {label: "Products Main Title", name: "prodMainTitle", widget: "string"}
+              - {label: "AC Feature 1", name: "acFeat1", widget: "string"}
+              - {label: "AC Feature 2", name: "acFeat2", widget: "string"}
+              - {label: "AC Feature 3", name: "acFeat3", widget: "string"}
               - {label: "AC Chargers Title", name: "acChargers", widget: "string"}
               - {label: "AC Description", name: "acDesc", widget: "string"}
               - {label: "View Pricing Button", name: "viewPricing", widget: "string"}
@@ -98,6 +101,9 @@ collections:
               - {label: "AC დამტენების სათაური", name: "acChargers", widget: "string"}
               - {label: "AC აღწერა", name: "acDesc", widget: "string"}
               - {label: "ფასების ღილაკი", name: "viewPricing", widget: "string"}
+              - {label: "AC მახასიათებელი 1", name: "acFeat1", widget: "string"}
+              - {label: "AC მახასიათებელი 2", name: "acFeat2", widget: "string"}
+              - {label: "AC მახასიათებელი 3", name: "acFeat3", widget: "string"}
               - {label: "ვიდეოს ტექსტი", name: "videoSectionText", widget: "text"}
               - {label: "ფუნქცია 1", name: "feat1", widget: "string"}
               - {label: "ფუნქცია 2", name: "feat2", widget: "string"}
