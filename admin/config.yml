@@ -131,91 +131,70 @@ collections:
         name: "product_full_page"
         file: "product_page.json"
         fields:
+          - label: "საერთო ელემენტები (Header/Modal)"
+        name: "site_common"
+        file: "product_page.json" # იგივე ფაილს ვიყენებთ
+        fields:
           # --- GEORGIAN (KA) ---
           - name: "ka"
             label: "Georgian (KA)"
             widget: "object"
             fields:
-              - label: "ჰედერი"
+              - label: "ჰედერი და მენიუ"
                 name: "header"
                 widget: "object"
                 fields:
+                  - { label: "საიტის ლოგო", name: "logo", widget: "image" }
                   - { label: "მთავარი", name: "home", widget: "string" }
                   - { label: "დამტენები", name: "chargers", widget: "string" }
+                  - { label: "AC დამტენები", name: "acChargers", widget: "string" }
+                  - { label: "AC აღწერა", name: "acDesc", widget: "string" }
+                  - { label: "DC დამტენები", name: "dcChargers", widget: "string" }
+                  - { label: "DC აღწერა", name: "dcDesc", widget: "string" }
+                  - { label: "ყველა პროდუქტი", name: "allProducts", widget: "string" }
                   - { label: "ჩვენს შესახებ", name: "about", widget: "string" }
+                  - { label: "ვინ ვართ ჩვენ", name: "whoWeAre", widget: "string" }
+                  - { label: "სერტიფიკატები", name: "certification", widget: "string" }
                   - { label: "კონტაქტი", name: "contact", widget: "string" }
-
-              - label: "ზოგადი ტექსტები"
-                name: "common"
+                  - { label: "გალერეა", name: "gallery", widget: "string" }
+              
+              - label: "საკონტაქტო მოდალი"
+                name: "modal"
                 widget: "object"
                 fields:
-                  - { label: "ტექსტი - სიმძლავრე", name: "label_power", widget: "string" }
-                  - { label: "ტექსტი - ფასი", name: "label_price", widget: "string" }
-                  - { label: "ღილაკი - შეკვეთა", name: "btn_order", widget: "string" }
-
-              # პროდუქტების სია (p1 - p8)
-              - label: "პროდუქტების სია"
-                name: "products"
-                widget: "list"
-                summary: '{{fields.id}} - {{fields.title}}'
-                fields:
-                  - { label: "ID (p1, p2... p8)", name: "id", widget: "string" }
-                  - { label: "სათაური", name: "title", widget: "string" }
-                  - { label: "აღწერა", name: "desc", widget: "text" }
-                  - label: "კილოვატები"
-                    name: "variants"
-                    widget: "list"
-                    fields:
-                      - { label: "kW", name: "kw", widget: "string" }
-                      - { label: "ფასი", name: "price", widget: "string" }
-                  - label: "ფერები და სურათები"
-                    name: "colors"
-                    widget: "list"
-                    fields:
-                      - { label: "ფერის სახელი", name: "c_name", widget: "string" }
-                      - { label: "ფერის HEX კოდი", name: "hex", widget: "string" }
-                      - { label: "სურათი", name: "img", widget: "image" }
+                  - { label: "სახელის ველი", name: "contactName", widget: "string" }
+                  - { label: "იმეილის ველი", name: "contactEmail", widget: "string" }
+                  - { label: "შეტყობინების ველი", name: "contactMsg", widget: "string" }
+                  - { label: "ღილაკი", name: "contactBtn", widget: "string" }
 
           # --- ENGLISH (EN) ---
           - name: "en"
             label: "English (EN)"
             widget: "object"
             fields:
-              - label: "Header"
+              - label: "Header & Menu"
                 name: "header"
                 widget: "object"
                 fields:
+                  - { label: "Site Logo", name: "logo", widget: "image" }
                   - { label: "Home", name: "home", widget: "string" }
                   - { label: "Chargers", name: "chargers", widget: "string" }
+                  - { label: "AC Chargers", name: "acChargers", widget: "string" }
+                  - { label: "AC Description", name: "acDesc", widget: "string" }
+                  - { label: "DC Chargers", name: "dcChargers", widget: "string" }
+                  - { label: "DC Description", name: "dcDesc", widget: "string" }
+                  - { label: "All Products", name: "allProducts", widget: "string" }
                   - { label: "About Us", name: "about", widget: "string" }
+                  - { label: "Who We Are", name: "whoWeAre", widget: "string" }
+                  - { label: "Certification", name: "certification", widget: "string" }
                   - { label: "Contact", name: "contact", widget: "string" }
+                  - { label: "Gallery", name: "gallery", widget: "string" }
 
-              - label: "Common Texts"
-                name: "common"
+              - label: "Contact Modal"
+                name: "modal"
                 widget: "object"
                 fields:
-                  - { label: "Label - Power", name: "label_power", widget: "string" }
-                  - { label: "Label - Price", name: "label_price", widget: "string" }
-                  - { label: "Button - Order", name: "btn_order", widget: "string" }
-
-              - label: "Product List"
-                name: "products"
-                widget: "list"
-                summary: '{{fields.id}} - {{fields.title}}'
-                fields:
-                  - { label: "ID (p1, p2... p8)", name: "id", widget: "string" }
-                  - { label: "Title", name: "title", widget: "string" }
-                  - { label: "Description", name: "desc", widget: "text" }
-                  - label: "Power Options"
-                    name: "variants"
-                    widget: "list"
-                    fields:
-                      - { label: "kW", name: "kw", widget: "string" }
-                      - { label: "Price", name: "price", widget: "string" }
-                  - label: "Colors & Images"
-                    name: "colors"
-                    widget: "list"
-                    fields:
-                      - { label: "Color Name", name: "c_name", widget: "string" }
-                      - { label: "HEX Code", name: "hex", widget: "string" }
-                      - { label: "Image", name: "img", widget: "image" }
+                  - { label: "Name Placeholder", name: "contactName", widget: "string" }
+                  - { label: "Email Placeholder", name: "contactEmail", widget: "string" }
+                  - { label: "Message Placeholder", name: "contactMsg", widget: "string" }
+                  - { label: "Button Text", name: "contactBtn", widget: "string" }
