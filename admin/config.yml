@@ -47,6 +47,11 @@ collections:
               - { label: "Slide 4 Subtitle", name: "heroSubtitleFour", widget: "text" }
               # Promo
               - { label: "Promo Section Title", name: "promoTitle", widget: "string" }
+              - {label: "Compatibility Title", name: "compatibleWith", widget: "string"}
+              - {label: "Products Main Title", name: "prodMainTitle", widget: "string"}
+              - {label: "AC Chargers Title", name: "acChargers", widget: "string"}
+              - {label: "AC Description", name: "acDesc", widget: "string"}
+              - {label: "View Pricing Button", name: "viewPricing", widget: "string"}
               - {label: "Video Title", name: "videoSectionTitle", widget: "string"}
               - {label: "Video Text", name: "videoSectionText", widget: "text"}
               - {label: "Feature 1", name: "feat1", widget: "string"}
@@ -88,6 +93,11 @@ collections:
               - { label: "სლაიდი 4 - ქვესათაური", name: "heroSubtitleFour", widget: "text" }
               - { label: "პრომო სექციის სათაური", name: "promoTitle", widget: "string" }
               - {label: "ვიდეოს სათაური", name: "videoSectionTitle", widget: "string"}
+              - {label: "თავსებადობის სათაური", name: "compatibleWith", widget: "string"}
+              - {label: "პროდუქტების მთავარი სათაური", name: "prodMainTitle", widget: "string"}
+              - {label: "AC დამტენების სათაური", name: "acChargers", widget: "string"}
+              - {label: "AC აღწერა", name: "acDesc", widget: "string"}
+              - {label: "ფასების ღილაკი", name: "viewPricing", widget: "string"}
               - {label: "ვიდეოს ტექსტი", name: "videoSectionText", widget: "text"}
               - {label: "ფუნქცია 1", name: "feat1", widget: "string"}
               - {label: "ფუნქცია 2", name: "feat2", widget: "string"}
