@@ -1,6 +1,6 @@
 backend:
   name: git-gateway
-  branch: master # ან main, გააჩნია რა გქვია GitHub-ზე
+  branch: master
 
 publish_mode: editorial_workflow
 
@@ -8,132 +8,118 @@ media_folder: "images"
 public_folder: "/images"
 
 collections:
-  - name: "translations"
-    label: "საიტის კონტენტი"
+  - name: "home_page_content"
+    label: "მთავარი გვერდი"
     files:
-      - label: "მთავარი გვერდის ტექსტები"
-        name: "home_page"
-        file: "translations.json" # <--- აქ არ დაუწერო /admin/! თუ translations.json მთავარ საქაღალდეშია.
+      - label: "მთავარი გვერდის ტექსტები და მედია"
+        name: "home_ui"
+        file: "translations.json"
         fields:
           - name: "en"
             label: "English (EN)"
             widget: "object"
             fields:
-            - { label: "Page Title", name: "pageTitle", widget: "string" }
-            - { label: "Home", name: "home", widget: "string" }
-            - { label: "Chargers Label", name: "chargers", widget: "string" }
-            - { label: "AC Label", name: "acChargers", widget: "string" }
-            - { label: "AC Description", name: "acDesc", widget: "string" }
-            - { label: "DC Label", name: "dcChargers", widget: "string" }
-            - { label: "DC Description", name: "dcDesc", widget: "string" }                 
-            - { label: "About Label", name: "about", widget: "string" }
-            - { label: "Contact Label", name: "contactNav", widget: "string" } 
-            - { label: "Contact Modal Title", name: "contactTitle", widget: "string" }
-            - { label: "Input Placeholder: Name", name: "contactName", widget: "string" }
-            - { label: "Input Placeholder: Email", name: "contactEmail", widget: "string" }
-            - { label: "Input Placeholder: Message", name: "contactMsg", widget: "string" }
-            - { label: "Contact Button", name: "contactBtn", widget: "string" }
-            # Slide 1
-            - { label: "Slide 1 Title", name: "heroTitle", widget: "string" }
-            - { label: "Slide 1 Subtitle", name: "heroSubtitle", widget: "text" }
-            # Slide 2
-            - { label: "Slide 2 Title", name: "heroTitleTwo", widget: "string" }
-            - { label: "Slide 2 Subtitle", name: "heroSubtitleTwo", widget: "text" }
-            # Slide 3
-            - { label: "Slide 3 Title", name: "heroTitleThree", widget: "string" }
-            - { label: "Slide 3 Subtitle", name: "heroSubtitleThree", widget: "text" }
-            # Slide 4
-            - { label: "Slide 4 Title", name: "heroTitleFour", widget: "string" }
-            - { label: "Slide 4 Subtitle", name: "heroSubtitleFour", widget: "text" }
-            # Promo
-            - { label: "Promo Section Title", name: "promoTitle", widget: "string" }
-            - { label: "Compatibility Title", name: "compatibleWith", widget: "string"}
-            - { label: "Products Main Title", name: "prodMainTitle", widget: "string"}
-            - { label: "AC Feature 1", name: "acFeat1", widget: "string"}
-            - { label: "AC Feature 2", name: "acFeat2", widget: "string"}
-            - { label: "AC Feature 3", name: "acFeat3", widget: "string"}
-            - { label: "AC Chargers Title", name: "acChargersProduct", widget: "string"}
-            - { label: "AC Description", name: "acDescProduct", widget: "string"} # <--- აქ შევცვალე სახელი
-            - { label: "View Pricing Button", name: "viewPricing", widget: "string"}
-            - { label: "Video Title", name: "videoSectionTitle", widget: "string"}
-            - { label: "Video Text", name: "videoSectionText", widget: "text"}
-            - { label: "Feature 1", name: "feat1", widget: "string"}
-            - { label: "Feature 2", name: "feat2", widget: "string"}
-            - { label: "Feature 3", name: "feat3", widget: "string"}
-            - { label: "App Title", name: "appTitle", widget: "string"}
-            - { label: "App Subtitle", name: "appSubtitle", widget: "text"}
-            - { label: "App Step 1", name: "appStep1Title", widget: "string"}
-            - { label: "App Step 2", name: "appStep2Title", widget: "string"}
+              - { label: "მთავარი ლოგო", name: "logo", widget: "image" }
+              - { label: "სლაიდი 1 (სურათი)", name: "slide1Img", widget: "image" }
+              - { label: "სლაიდი 2 (სურათი)", name: "slide2Img", widget: "image" }
+              - { label: "სლაიდი 3 (სურათი)", name: "slide3Img", widget: "image" }
+              - { label: "სლაიდი 4 (სურათი)", name: "slide4Img", widget: "image" } 
+              - { label: "პრომო სექცია (სურათი)", name: "promoImg", widget: "image" }
+              - { label: "Page Title", name: "pageTitle", widget: "string" }
+              - { label: "Home", name: "home", widget: "string" }
+              - { label: "Chargers Label", name: "chargers", widget: "string" }
+              - { label: "AC Label", name: "acChargers", widget: "string" }
+              - { label: "AC Description", name: "acDesc", widget: "string" }
+              - { label: "DC Label", name: "dcChargers", widget: "string" }
+              - { label: "DC Description", name: "dcDesc", widget: "string" }                 
+              - { label: "About Label", name: "about", widget: "string" }
+              - { label: "Contact Label", name: "contactNav", widget: "string" } 
+              - { label: "Contact Modal Title", name: "contactTitle", widget: "string" }
+              - { label: "Input Placeholder: Name", name: "contactName", widget: "string" }
+              - { label: "Input Placeholder: Email", name: "contactEmail", widget: "string" }
+              - { label: "Input Placeholder: Message", name: "contactMsg", widget: "string" }
+              - { label: "Contact Button", name: "contactBtn", widget: "string" }
+              - { label: "Slide 1 Title", name: "heroTitle", widget: "string" }
+              - { label: "Slide 1 Subtitle", name: "heroSubtitle", widget: "text" }
+              - { label: "Slide 2 Title", name: "heroTitleTwo", widget: "string" }
+              - { label: "Slide 2 Subtitle", name: "heroSubtitleTwo", widget: "text" }
+              - { label: "Slide 3 Title", name: "heroTitleThree", widget: "string" }
+              - { label: "Slide 3 Subtitle", name: "heroSubtitleThree", widget: "text" }
+              - { label: "Slide 4 Title", name: "heroTitleFour", widget: "string" }
+              - { label: "Slide 4 Subtitle", name: "heroSubtitleFour", widget: "text" }
+              - { label: "Promo Section Title", name: "promoTitle", widget: "string" }
+              - { label: "Compatibility Title", name: "compatibleWith", widget: "string"}
+              - { label: "Products Main Title", name: "prodMainTitle", widget: "string"}
+              - { label: "AC Feature 1", name: "acFeat1", widget: "string"}
+              - { label: "AC Feature 2", name: "acFeat2", widget: "string"}
+              - { label: "AC Feature 3", name: "acFeat3", widget: "string"}
+              - { label: "AC Chargers Title", name: "acChargersProduct", widget: "string"}
+              - { label: "AC Description", name: "acDescProduct", widget: "string"}
+              - { label: "View Pricing Button", name: "viewPricing", widget: "string"}
+              - { label: "Video Title", name: "videoSectionTitle", widget: "string"}
+              - { label: "Video Text", name: "videoSectionText", widget: "text"}
+              - { label: "Feature 1", name: "feat1", widget: "string"}
+              - { label: "Feature 2", name: "feat2", widget: "string"}
+              - { label: "Feature 3", name: "feat3", widget: "string"}
+              - { label: "App Title", name: "appTitle", widget: "string"}
+              - { label: "App Subtitle", name: "appSubtitle", widget: "text"}
+              - { label: "App Step 1", name: "appStep1Title", widget: "string"}
+              - { label: "App Step 2", name: "appStep2Title", widget: "string"}
+
           - name: "ka"
             label: "ქართული (KA)"
             widget: "object"
             fields:
-            - { label: "გვერდის სათაური", name: "pageTitle", widget: "string" }
-            - { label: "მთავარი", name: "home", widget: "string" }
-            - { label: "დამტენები", name: "chargers", widget: "string" }
-            - { label: "AC დამტენები", name: "acChargers", widget: "string" }
-            - { label: "AC აღწერა", name: "acDesc", widget: "string" }
-            - { label: "DC დამტენები", name: "dcChargers", widget: "string" }
-            - { label: "DC აღწერა", name: "dcDesc", widget: "string" }
-            - { label: "ჩვენს შესახებ", name: "about", widget: "string" }
-            - { label: "კონტაქტი", name: "contact", widget: "string" }
-            - { label: "კონტაქტის ფანჯრის სათაური", name: "contactTitle", widget: "string" }
-            - { label: "მინიშნება: სახელი", name: "contactName", widget: "string" }
-            - { label: "მინიშნება: ელ-ფოსტა", name: "contactEmail", widget: "string" }
-            - { label: "მინიშნება: შეტყობინება", name: "contactMsg", widget: "string" }
-            - { label: "ღილაკი: გაგზავნა", name: "contactBtn", widget: "string" }
-            # Slide 1
-            - { label: "სლაიდი 1 - სათაური", name: "heroTitle", widget: "string" }
-            - { label: "სლაიდი 1 - ქვესათაური", name: "heroSubtitle", widget: "text" }
-            # Slide 2
-            - { label: "სლაიდი 2 - სათაური", name: "heroTitleTwo", widget: "string" }
-            - { label: "სლაიდი 2 - ქვესათაური", name: "heroSubtitleTwo", widget: "text" }
-            # Slide 3
-            - { label: "სლაიდი 3 - სათაური", name: "heroTitleThree", widget: "string" }
-            - { label: "სლაიდი 3 - ქვესათაური", name: "heroSubtitleThree", widget: "text" }
-            # Slide 4
-            - { label: "სლაიდი 4 - სათაური", name: "heroTitleFour", widget: "string" }
-            - { label: "სლაიდი 4 - ქვესათაური", name: "heroSubtitleFour", widget: "text" }
-            - { label: "პრომო სექციის სათაური", name: "promoTitle", widget: "string" }
-            - { label: "ვიდეოს სათაური", name: "videoSectionTitle", widget: "string" }
-            - { label: "თავსებადობის სათაური", name: "compatibleWith", widget: "string" }
-            - { label: "პროდუქტების მთავარი სათაური", name: "prodMainTitle", widget: "string" }
-            - { label: "AC დამტენების სათაური", name: "acChargersProduct", widget: "string" } # შეცვლილია
-            - { label: "AC აღწერა", name: "acDescProduct", widget: "string" } # შეცვლილია
-            - { label: "ფასების ღილაკი", name: "viewPricing", widget: "string" }
-            - { label: "AC მახასიათებელი 1", name: "acFeat1", widget: "string" }
-            - { label: "AC მახასიათებელი 2", name: "acFeat2", widget: "string" }
-            - { label: "AC მახასიათებელი 3", name: "acFeat3", widget: "string" }
-            - { label: "ვიდეოს ტექსტი", name: "videoSectionText", widget: "text" }
-            - { label: "ფუნქცია 1", name: "feat1", widget: "string" }
-            - { label: "ფუნქცია 2", name: "feat2", widget: "string" }
-            - { label: "ფუნქცია 3", name: "feat3", widget: "string" }
-            - { label: "აპლიკაციის სათაური", name: "appTitle", widget: "string" }
-            - { label: "აპლიკაციის ქვესათაური", name: "appSubtitle", widget: "text" }
-            - { label: "აპლიკაციის ნაბიჯი 1", name: "appStep1Title", widget: "string" }
-            - { label: "აპლიკაციის ნაბიჯი 2", name: "appStep2Title", widget: "string" }
-              
-  - name: "site_media"
-    label: "მედია ფაილები"
-    files:
-      - label: "ლოგო და ბრენდინგი"
-        name: "branding"
-        file: "translations.json"
-        fields:
-          - { label: "მთავარი ლოგო", name: "logo", widget: "image" }
-          - { label: "სლაიდი 1 (სურათი)", name: "slide1Img", widget: "image" }
-          - { label: "სლაიდი 2 (სურათი)", name: "slide2Img", widget: "image" }
-          - { label: "სლაიდი 3 (სურათი)", name: "slide3Img", widget: "image" }
-          - { label: "სლაიდი 4 (სურათი)", name: "slide4Img", widget: "image" } 
-          - { label: "პრომო სექცია (სურათი)", name: "promoImg", widget: "image" }
+              - { label: "გვერდის სათაური", name: "pageTitle", widget: "string" }
+              - { label: "მთავარი", name: "home", widget: "string" }
+              - { label: "დამტენები", name: "chargers", widget: "string" }
+              - { label: "AC დამტენები", name: "acChargers", widget: "string" }
+              - { label: "AC აღწერა", name: "acDesc", widget: "string" }
+              - { label: "DC დამტენები", name: "dcChargers", widget: "string" }
+              - { label: "DC აღწერა", name: "dcDesc", widget: "string" }
+              - { label: "ჩვენს შესახებ", name: "about", widget: "string" }
+              - { label: "კონტაქტი", name: "contact", widget: "string" }
+              - { label: "კონტაქტის ფანჯრის სათაური", name: "contactTitle", widget: "string" }
+              - { label: "მინიშნება: სახელი", name: "contactName", widget: "string" }
+              - { label: "მინიშნება: ელ-ფოსტა", name: "contactEmail", widget: "string" }
+              - { label: "მინიშნება: შეტყობინება", name: "contactMsg", widget: "string" }
+              - { label: "ღილაკი: გაგზავნა", name: "contactBtn", widget: "string" }
+              - { label: "სლაიდი 1 - სათაური", name: "heroTitle", widget: "string" }
+              - { label: "სლაიდი 1 - ქვესათაური", name: "heroSubtitle", widget: "text" }
+              - { label: "სლაიდი 2 - სათაური", name: "heroTitleTwo", widget: "string" }
+              - { label: "სლაიდი 2 - ქვესათაური", name: "heroSubtitleTwo", widget: "text" }
+              - { label: "სლაიდი 3 - სათაური", name: "heroTitleThree", widget: "string" }
+              - { label: "სლაიდი 3 - ქვესათაური", name: "heroSubtitleThree", widget: "text" }
+              - { label: "სლაიდი 4 - სათაური", name: "heroTitleFour", widget: "string" }
+              - { label: "სლაიდი 4 - ქვესათაური", name: "heroSubtitleFour", widget: "text" }
+              - { label: "პრომო სექციის სათაური", name: "promoTitle", widget: "string" }
+              - { label: "ვიდეოს სათაური", name: "videoSectionTitle", widget: "string" }
+              - { label: "თავსებადობის სათაური", name: "compatibleWith", widget: "string" }
+              - { label: "პროდუქტების მთავარი სათაური", name: "prodMainTitle", widget: "string" }
+              - { label: "AC დამტენების სათაური", name: "acChargersProduct", widget: "string" }
+              - { label: "AC აღწერა", name: "acDescProduct", widget: "string" }
+              - { label: "ფასების ღილაკი", name: "viewPricing", widget: "string" }
+              - { label: "AC მახასიათებელი 1", name: "acFeat1", widget: "string" }
+              - { label: "AC მახასიათებელი 2", name: "acFeat2", widget: "string" }
+              - { label: "AC მახასიათებელი 3", name: "acFeat3", widget: "string" }
+              - { label: "ვიდეოს ტექსტი", name: "videoSectionText", widget: "text" }
+              - { label: "ფუნქცია 1", name: "feat1", widget: "string" }
+              - { label: "ფუნქცია 2", name: "feat2", widget: "string" }
+              - { label: "ფუნქცია 3", name: "feat3", widget: "string" }
+              - { label: "აპლიკაციის სათაური", name: "appTitle", widget: "string" }
+              - { label: "აპლიკაციის ქვესათაური", name: "appSubtitle", widget: "text" }
+              - { label: "აპლიკაციის ნაბიჯი 1", name: "appStep1Title", widget: "string" }
+              - { label: "აპლიკაციის ნაბიჯი 2", name: "appStep2Title", widget: "string" }
 
-      - label: "ჰედერი და ნავიგაცია პროდუქცის გვერდის"
-        name: "site_header_section" # სახელი შეცვლილია, რომ არ განმეორდეს
+  - name: "product_page_content"
+    label: "პროდუქტების გვერდი"
+    files:
+      - label: "ჰედერი და პროდუქტები"
+        name: "product_ui"
         file: "product_page.json"
         fields:
-          # --- GEORGIAN (KA) ---
           - name: "ka"
-            label: "Georgian (KA)"
+            label: "ქართული (KA)"
             widget: "object"
             fields:
               - label: "მთავარი ელემენტები"
@@ -153,7 +139,6 @@ collections:
                   - { label: "სერტიფიკატები", name: "certification", widget: "string" }
                   - { label: "კონტაქტი", name: "contact", widget: "string" }
                   - { label: "გალერეა", name: "gallery", widget: "string" }
-              
               - label: "კონტაქტის ფორმა"
                 name: "modal"
                 widget: "object"
@@ -163,7 +148,6 @@ collections:
                   - { label: "ტექსტი (Placeholder)", name: "contactMsg", widget: "string" }
                   - { label: "ღილაკი", name: "contactBtn", widget: "string" }
 
-          # --- ENGLISH (EN) ---
           - name: "en"
             label: "English (EN)"
             widget: "object"
@@ -185,7 +169,7 @@ collections:
                   - { label: "Certification", name: "certification", widget: "string" }
                   - { label: "Contact Us", name: "contact", widget: "string" }
                   - { label: "Gallery", name: "gallery", widget: "string" }
-
+                  
               - label: "Contact Modal"
                 name: "modal"
                 widget: "object"
