@@ -69,7 +69,7 @@ collections:
               - { label: "DC აღწერა", name: "dcDesc", widget: "string" }
               - { label: "ჩვენს შესახებ", name: "about", widget: "string" }
               - { label: "კონტაქტი", name: "contact", widget: "string" }
-              - { label: "კონტაქტის ფანჯრის სათაური", name: "contact", widget: "string" }
+              - { label: "კონტაქტის ფანჯრის სათაური", name: "contactTitle", widget: "string" }
               - { label: "მინიშნება: სახელი", name: "contactName", widget: "string" }
               - { label: "მინიშნება: ელ-ფოსტა", name: "contactEmail", widget: "string" }
               - { label: "მინიშნება: შეტყობინება", name: "contactMsg", widget: "string" }
