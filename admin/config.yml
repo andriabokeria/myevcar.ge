@@ -27,8 +27,8 @@ collections:
               - { label: "DC Label", name: "dcChargers", widget: "string" }
               - { label: "DC Description", name: "dcDesc", widget: "string" }
               - { label: "About Label", name: "about", widget: "string" }
-              - { label: "Contact Label", name: "contact", widget: "string" }
-              - { label: "Contact Modal Title", name: "contact", widget: "string" }
+              - { label: "Contact Label", name: "contactNav", widget: "string" } 
+              - { label: "Contact Modal Title", name: "contactTitle", widget: "string" }
               - { label: "Input Placeholder: Name", name: "contactName", widget: "string" }
               - { label: "Input Placeholder: Email", name: "contactEmail", widget: "string" }
               - { label: "Input Placeholder: Message", name: "contactMsg", widget: "string" }
