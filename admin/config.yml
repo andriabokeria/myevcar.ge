@@ -127,7 +127,7 @@ collections:
           - { label: "სლაიდი 4 (სურათი)", name: "slide4Img", widget: "image" } 
           - { label: "პრომო სექცია (სურათი)", name: "promoImg", widget: "image" }
 
-      - label: "პროდუქციის გვერდი (სრული)"
+      - label: "product page"
         name: "productfull_page"
         file: "product_page.json"
         fields:
