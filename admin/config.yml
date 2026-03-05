@@ -86,6 +86,7 @@ collections:
               # Slide 4
               - { label: "სლაიდი 4 - სათაური", name: "heroTitleFour", widget: "string" }
               - { label: "სლაიდი 4 - ქვესათაური", name: "heroSubtitleFour", widget: "text" }
+              - { label: "პრომო სექციის სათაური", name: "promoTitle", widget: "string" }
               - {label: "ვიდეოს სათაური", name: "videoSectionTitle", widget: "string"}
               - {label: "ვიდეოს ტექსტი", name: "videoSectionText", widget: "text"}
               - {label: "ფუნქცია 1", name: "feat1", widget: "string"}
