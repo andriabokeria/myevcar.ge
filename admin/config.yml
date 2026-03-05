@@ -126,3 +126,115 @@ collections:
           - { label: "სლაიდი 3 (სურათი)", name: "slide3Img", widget: "image" }
           - { label: "სლაიდი 4 (სურათი)", name: "slide4Img", widget: "image" } 
           - { label: "პრომო სექცია (სურათი)", name: "promoImg", widget: "image" }
+
+      - label: "პროდუქციის გვერდი (სრული)"
+        name: "product_full_page"
+        file: "product_page.json"
+        fields:
+          # --- GEORGIAN (KA) ---
+          - name: "ka"
+            label: "Georgian (KA)"
+            widget: "object"
+            fields:
+              - label: "ჰედერი"
+                name: "header"
+                widget: "object"
+                fields:
+                  - { label: "მთავარი", name: "home", widget: "string" }
+                  - { label: "დამტენები", name: "chargers", widget: "string" }
+                  - { label: "ჩვენს შესახებ", name: "about", widget: "string" }
+                  - { label: "კონტაქტი", name: "contact", widget: "string" }
+              
+              - label: "პროდუქტი 1 (CDZ-J)"
+                name: "p1"
+                widget: "object"
+                fields:
+                  - { label: "სათაური", name: "title", widget: "string" }
+                  - { label: "აღწერა", name: "desc", widget: "text" }
+                  - label: "კილოვატების სია"
+                    name: "variants"
+                    widget: "list"
+                    fields:
+                      - { label: "kW მნიშვნელობა", name: "kw", widget: "string" }
+                      - { label: "ფასი", name: "price", widget: "string" }
+                  - label: "ფერების სია"
+                    name: "colors"
+                    widget: "list"
+                    fields:
+                      - { label: "ფერის სახელი", name: "c_name", widget: "string" }
+                      - { label: "ფერის კოდი (HEX)", name: "hex", widget: "string" }
+                      - { label: "ამ ფერის სურათი", name: "img", widget: "image" }
+
+              - label: "პროდუქტი 2 (CDZ-BT)"
+                name: "p2"
+                widget: "object"
+                fields:
+                  - { label: "სათაური", name: "title", widget: "string" }
+                  - { label: "აღწერა", name: "desc", widget: "text" }
+                  - label: "კილოვატების სია"
+                    name: "variants"
+                    widget: "list"
+                    fields:
+                      - { label: "kW მნიშვნელობა", name: "kw", widget: "string" }
+                      - { label: "ფასი", name: "price", widget: "string" }
+                  - label: "ფერების სია"
+                    name: "colors"
+                    widget: "list"
+                    fields:
+                      - { label: "ფერის სახელი", name: "c_name", widget: "string" }
+                      - { label: "ფერის კოდი (HEX)", name: "hex", widget: "string" }
+                      - { label: "ამ ფერის სურათი", name: "img", widget: "image" }
+
+          # --- ENGLISH (EN) ---
+          - name: "en"
+            label: "English (EN)"
+            widget: "object"
+            fields:
+              - label: "Header"
+                name: "header"
+                widget: "object"
+                fields:
+                  - { label: "Home", name: "home", widget: "string" }
+                  - { label: "Chargers", name: "chargers", widget: "string" }
+                  - { label: "About Us", name: "about", widget: "string" }
+                  - { label: "Contact", name: "contact", widget: "string" }
+
+              - label: "Product 1 (CDZ-J)"
+                name: "p1"
+                widget: "object"
+                fields:
+                  - { label: "Title", name: "title", widget: "string" }
+                  - { label: "Description", name: "desc", widget: "text" }
+                  - label: "Power List"
+                    name: "variants"
+                    widget: "list"
+                    fields:
+                      - { label: "kW Value", name: "kw", widget: "string" }
+                      - { label: "Price", name: "price", widget: "string" }
+                  - label: "Color Variants"
+                    name: "colors"
+                    widget: "list"
+                    fields:
+                      - { label: "Color Name", name: "c_name", widget: "string" }
+                      - { label: "HEX Code", name: "hex", widget: "string" }
+                      - { label: "Image", name: "img", widget: "image" }
+
+              - label: "Product 2 (CDZ-BT)"
+                name: "p2"
+                widget: "object"
+                fields:
+                  - { label: "Title", name: "title", widget: "string" }
+                  - { label: "Description", name: "desc", widget: "text" }
+                  - label: "Power List"
+                    name: "variants"
+                    widget: "list"
+                    fields:
+                      - { label: "kW Value", name: "kw", widget: "string" }
+                      - { label: "Price", name: "price", widget: "string" }
+                  - label: "Color Variants"
+                    name: "colors"
+                    widget: "list"
+                    fields:
+                      - { label: "Color Name", name: "c_name", widget: "string" }
+                      - { label: "HEX Code", name: "hex", widget: "string" }
+                      - { label: "Image", name: "img", widget: "image" }
