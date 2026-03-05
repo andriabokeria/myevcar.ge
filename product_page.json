@@ -1,0 +1,48 @@
+{
+  "ka": {
+    "header": {
+      "logo": "images/mymobile.png",
+      "home": "მთავარი",
+      "chargers": "დამტენები",
+      "acChargers": "AC დამტენები",
+      "acDesc": "AC: პორტატული, კედლის",
+      "dcChargers": "DC დამტენები",
+      "dcDesc": "მუდმივი დენის სწრაფი დამტენი",
+      "allProducts": "ყველა პროდუქტი",
+      "about": "ჩვენს შესახებ",
+      "whoWeAre": "ვინ ვართ ჩვენ",
+      "certification": "სერტიფიკატები",
+      "contact": "კონტაქტი",
+      "gallery": "გალერეა"
+    },
+    "modal": {
+      "contactName": "სახელი",
+      "contactEmail": "ელ-ფოსტა",
+      "contactMsg": "როგორ დაგეხმაროთ?",
+      "contactBtn": "გაგზავნა"
+    }
+  },
+  "en": {
+    "header": {
+      "logo": "images/mymobile.png",
+      "home": "Home",
+      "chargers": "Chargers",
+      "acChargers": "AC Chargers",
+      "acDesc": "AC: portable, wall-mounted",
+      "dcChargers": "DC Chargers",
+      "dcDesc": "Direct Current Fast Charging",
+      "allProducts": "All Charging Products",
+      "about": "About Us",
+      "whoWeAre": "Who We Are",
+      "certification": "Certification",
+      "contact": "Contact Us",
+      "gallery": "Gallery"
+    },
+    "modal": {
+      "contactName": "Name",
+      "contactEmail": "Email",
+      "contactMsg": "How can we help?",
+      "contactBtn": "Send Message"
+    }
+  }
+}
