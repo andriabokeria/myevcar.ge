@@ -11,7 +11,8 @@
     "about": "About Us",
     "whoWeAre": "Who We Are",
     "certification": "Certification",
-    "contact": "Contact Us",
+    "contactNavLink": "Contact Us",
+    "contactModalTitle": "Get in Touch",
     "gallery": "Gallery",
     "contactName": "Name",
     "contactEmail": "Email",
@@ -58,6 +59,8 @@
     "certification": "სერტიფიკატები",
     "contact": "დაგვიკავშირდით",
     "gallery": "გალერეა",
+    "contactNavLink": "კონტაქტი",
+    "contactModalTitle": "მოგვწერეთ",
     "contactName": "სახელი",
     "contactEmail": "ელ-ფოსტა",
     "contactMsg": "რით შეგვიძლია დაგეხმაროთ?",
@@ -88,5 +91,9 @@
     "appStep3Desc": "დაასკანირეთ QR კოდი დამტენზე მის დასაკავშირებლად.",
     "appStep4Title": "მართვა და მონიტორინგი",
     "appStep4Desc": "აკონტროლეთ ენერგიის მოხმარება რეალურ დროში."
-  }
+  },
+  "logo": "images/mymobile.png",
+  "slide1Img": "images/banner1.jpg",
+  "slide2Img": "images/banner2.jpg",
+  "promoImg": "images/Certification-mark-2.png"
 }
