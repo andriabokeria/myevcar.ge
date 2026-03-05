@@ -19,7 +19,15 @@ collections:
             label: "English (EN)"
             widget: "object"
             fields:
-              - {label: "Page Title", name: "pageTitle", widget: "string"}
+              - { label: "Page Title", name: "pageTitle", widget: "string" }
+              - { label: "Home", name: "home", widget: "string" }
+              - { label: "Chargers Label", name: "chargers", widget: "string" }
+              - { label: "AC Label", name: "acChargers", widget: "string" }
+              - { label: "AC Description", name: "acDesc", widget: "string" }
+              - { label: "DC Label", name: "dcChargers", widget: "string" }
+              - { label: "DC Description", name: "dcDesc", widget: "string" }
+              - { label: "About Label", name: "about", widget: "string" }
+              - { label: "Contact Label", name: "contact", widget: "string" }
               - {label: "Hero 1 Title", name: "heroTitle", widget: "string"}
               - {label: "Hero 1 Subtitle", name: "heroSubtitle", widget: "text"}
               - {label: "Hero 2 Title", name: "heroTitleTwo", widget: "string"}
@@ -41,7 +49,15 @@ collections:
             label: "ქართული (KA)"
             widget: "object"
             fields:
-              - {label: "გვერდის სათაური", name: "pageTitle", widget: "string"}
+              - { label: "გვერდის სათაური", name: "pageTitle", widget: "string" }
+              - { label: "მთავარი", name: "home", widget: "string" }
+              - { label: "დამტენები", name: "chargers", widget: "string" }
+              - { label: "AC დამტენები", name: "acChargers", widget: "string" }
+              - { label: "AC აღწერა", name: "acDesc", widget: "string" }
+              - { label: "DC დამტენები", name: "dcChargers", widget: "string" }
+              - { label: "DC აღწერა", name: "dcDesc", widget: "string" }
+              - { label: "ჩვენს შესახებ", name: "about", widget: "string" }
+              - { label: "კონტაქტი", name: "contact", widget: "string" }
               - {label: "მთავარი სათაური 1", name: "heroTitle", widget: "string"}
               - {label: "ქვესათაური 1", name: "heroSubtitle", widget: "text"}
               - {label: "მთავარი სათაური 2", name: "heroTitleTwo", widget: "string"}
@@ -61,8 +77,8 @@ collections:
   - name: "site_media"
     label: "სურათები"
     files:
-      - label: "მთავარი ლოგო"
-        name: "logos"
+      - label: "ლოგო და ბრენდინგი"
+        name: "branding"
         file: "translations.json"
         fields:
-          - { label: "ლოგო", name: "logo", widget: "image" }
+          - { label: "საიტის ლოგო", name: "logo", widget: "image" }
