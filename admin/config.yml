@@ -52,7 +52,7 @@ collections:
               - {label: "AC Feature 1", name: "acFeat1", widget: "string"}
               - {label: "AC Feature 2", name: "acFeat2", widget: "string"}
               - {label: "AC Feature 3", name: "acFeat3", widget: "string"}
-              - {label: "AC Chargers Title", name: "acChargers", widget: "string"}
+              - {label: "AC Chargers Title", name: "acChargersProduct", widget: "string"}
               - {label: "AC Description", name: "acDesc", widget: "string"}
               - {label: "View Pricing Button", name: "viewPricing", widget: "string"}
               - {label: "Video Title", name: "videoSectionTitle", widget: "string"}
