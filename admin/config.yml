@@ -127,24 +127,20 @@ collections:
           - { label: "სლაიდი 4 (სურათი)", name: "slide4Img", widget: "image" } 
           - { label: "პრომო სექცია (სურათი)", name: "promoImg", widget: "image" }
 
-      - label: "product page"
-        name: "productfull_page"
+      - label: "ჰედერი და ნავიგაცია"
+        name: "site_header_section" # სახელი შეცვლილია, რომ არ განმეორდეს
         file: "product_page.json"
-        fields:
-          - label: "საერთო ელემენტები (Header/Modal)"
-        name: "site_common"
-        file: "product_page.json" # იგივე ფაილს ვიყენებთ
         fields:
           # --- GEORGIAN (KA) ---
           - name: "ka"
             label: "Georgian (KA)"
             widget: "object"
             fields:
-              - label: "ჰედერი და მენიუ"
+              - label: "მთავარი ელემენტები"
                 name: "header"
                 widget: "object"
                 fields:
-                  - { label: "საიტის ლოგო", name: "logo", widget: "image" }
+                  - { label: "ლოგო", name: "logo", widget: "image" }
                   - { label: "მთავარი", name: "home", widget: "string" }
                   - { label: "დამტენები", name: "chargers", widget: "string" }
                   - { label: "AC დამტენები", name: "acChargers", widget: "string" }
@@ -158,13 +154,13 @@ collections:
                   - { label: "კონტაქტი", name: "contact", widget: "string" }
                   - { label: "გალერეა", name: "gallery", widget: "string" }
               
-              - label: "საკონტაქტო მოდალი"
+              - label: "კონტაქტის ფორმა"
                 name: "modal"
                 widget: "object"
                 fields:
-                  - { label: "სახელის ველი", name: "contactName", widget: "string" }
-                  - { label: "იმეილის ველი", name: "contactEmail", widget: "string" }
-                  - { label: "შეტყობინების ველი", name: "contactMsg", widget: "string" }
+                  - { label: "სახელი (Placeholder)", name: "contactName", widget: "string" }
+                  - { label: "იმეილი (Placeholder)", name: "contactEmail", widget: "string" }
+                  - { label: "ტექსტი (Placeholder)", name: "contactMsg", widget: "string" }
                   - { label: "ღილაკი", name: "contactBtn", widget: "string" }
 
           # --- ENGLISH (EN) ---
@@ -172,11 +168,11 @@ collections:
             label: "English (EN)"
             widget: "object"
             fields:
-              - label: "Header & Menu"
+              - label: "Header Elements"
                 name: "header"
                 widget: "object"
                 fields:
-                  - { label: "Site Logo", name: "logo", widget: "image" }
+                  - { label: "Logo", name: "logo", widget: "image" }
                   - { label: "Home", name: "home", widget: "string" }
                   - { label: "Chargers", name: "chargers", widget: "string" }
                   - { label: "AC Chargers", name: "acChargers", widget: "string" }
@@ -187,7 +183,7 @@ collections:
                   - { label: "About Us", name: "about", widget: "string" }
                   - { label: "Who We Are", name: "whoWeAre", widget: "string" }
                   - { label: "Certification", name: "certification", widget: "string" }
-                  - { label: "Contact", name: "contact", widget: "string" }
+                  - { label: "Contact Us", name: "contact", widget: "string" }
                   - { label: "Gallery", name: "gallery", widget: "string" }
 
               - label: "Contact Modal"
