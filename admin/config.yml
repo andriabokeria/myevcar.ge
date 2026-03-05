@@ -128,7 +128,7 @@ collections:
           - { label: "პრომო სექცია (სურათი)", name: "promoImg", widget: "image" }
 
       - label: "პროდუქციის გვერდი (სრული)"
-        name: "product_full_page"
+        name: "productfull_page"
         file: "product_page.json"
         fields:
           - label: "საერთო ელემენტები (Header/Modal)"
