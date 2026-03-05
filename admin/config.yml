@@ -20,50 +20,50 @@ collections:
             widget: "object"
             fields:
             - { label: "Page Title", name: "pageTitle", widget: "string" }
-              - { label: "Home", name: "home", widget: "string" }
-              - { label: "Chargers Label", name: "chargers", widget: "string" }
-              - { label: "AC Label", name: "acChargers", widget: "string" }
-              - { label: "AC Description", name: "acDesc", widget: "string" }
-              - { label: "DC Label", name: "dcChargers", widget: "string" }
-              - { label: "DC Description", name: "dcDesc", widget: "string" }
-              - { label: "About Label", name: "about", widget: "string" }
-              - { label: "Contact Label", name: "contactNav", widget: "string" } 
-              - { label: "Contact Modal Title", name: "contactTitle", widget: "string" }
-              - { label: "Input Placeholder: Name", name: "contactName", widget: "string" }
-              - { label: "Input Placeholder: Email", name: "contactEmail", widget: "string" }
-              - { label: "Input Placeholder: Message", name: "contactMsg", widget: "string" }
-              - { label: "Contact Button", name: "contactBtn", widget: "string" }
-              # Slide 1
-              - { label: "Slide 1 Title", name: "heroTitle", widget: "string" }
-              - { label: "Slide 1 Subtitle", name: "heroSubtitle", widget: "text" }
-              # Slide 2
-              - { label: "Slide 2 Title", name: "heroTitleTwo", widget: "string" }
-              - { label: "Slide 2 Subtitle", name: "heroSubtitleTwo", widget: "text" }
-              # Slide 3
-              - { label: "Slide 3 Title", name: "heroTitleThree", widget: "string" }
-              - { label: "Slide 3 Subtitle", name: "heroSubtitleThree", widget: "text" }
-              # Slide 4
-              - { label: "Slide 4 Title", name: "heroTitleFour", widget: "string" }
-              - { label: "Slide 4 Subtitle", name: "heroSubtitleFour", widget: "text" }
-              # Promo
-              - { label: "Promo Section Title", name: "promoTitle", widget: "string" }
-              - { label: "Compatibility Title", name: "compatibleWith", widget: "string"}
-              - { label: "Products Main Title", name: "prodMainTitle", widget: "string"}
-              - { label: "AC Feature 1", name: "acFeat1", widget: "string"}
-              - { label: "AC Feature 2", name: "acFeat2", widget: "string"}
-              - { label: "AC Feature 3", name: "acFeat3", widget: "string"}
-              - { label: "AC Chargers Title", name: "acChargersProduct", widget: "string"}
-              - { label: "AC Description", name: "acDescProduct", widget: "string"} # <--- აქ შევცვალე სახელი
-              - { label: "View Pricing Button", name: "viewPricing", widget: "string"}
-              - { label: "Video Title", name: "videoSectionTitle", widget: "string"}
-              - { label: "Video Text", name: "videoSectionText", widget: "text"}
-              - { label: "Feature 1", name: "feat1", widget: "string"}
-              - { label: "Feature 2", name: "feat2", widget: "string"}
-              - { label: "Feature 3", name: "feat3", widget: "string"}
-              - { label: "App Title", name: "appTitle", widget: "string"}
-              - { label: "App Subtitle", name: "appSubtitle", widget: "text"}
-              - { label: "App Step 1", name: "appStep1Title", widget: "string"}
-              - { label: "App Step 2", name: "appStep2Title", widget: "string"}
+            - { label: "Home", name: "home", widget: "string" }
+            - { label: "Chargers Label", name: "chargers", widget: "string" }
+            - { label: "AC Label", name: "acChargers", widget: "string" }
+            - { label: "AC Description", name: "acDesc", widget: "string" }
+            - { label: "DC Label", name: "dcChargers", widget: "string" }
+            - { label: "DC Description", name: "dcDesc", widget: "string" }                 
+            - { label: "About Label", name: "about", widget: "string" }
+            - { label: "Contact Label", name: "contactNav", widget: "string" } 
+            - { label: "Contact Modal Title", name: "contactTitle", widget: "string" }
+            - { label: "Input Placeholder: Name", name: "contactName", widget: "string" }
+            - { label: "Input Placeholder: Email", name: "contactEmail", widget: "string" }
+            - { label: "Input Placeholder: Message", name: "contactMsg", widget: "string" }
+            - { label: "Contact Button", name: "contactBtn", widget: "string" }
+            # Slide 1
+            - { label: "Slide 1 Title", name: "heroTitle", widget: "string" }
+            - { label: "Slide 1 Subtitle", name: "heroSubtitle", widget: "text" }
+            # Slide 2
+            - { label: "Slide 2 Title", name: "heroTitleTwo", widget: "string" }
+            - { label: "Slide 2 Subtitle", name: "heroSubtitleTwo", widget: "text" }
+            # Slide 3
+            - { label: "Slide 3 Title", name: "heroTitleThree", widget: "string" }
+            - { label: "Slide 3 Subtitle", name: "heroSubtitleThree", widget: "text" }
+            # Slide 4
+            - { label: "Slide 4 Title", name: "heroTitleFour", widget: "string" }
+            - { label: "Slide 4 Subtitle", name: "heroSubtitleFour", widget: "text" }
+            # Promo
+            - { label: "Promo Section Title", name: "promoTitle", widget: "string" }
+            - { label: "Compatibility Title", name: "compatibleWith", widget: "string"}
+            - { label: "Products Main Title", name: "prodMainTitle", widget: "string"}
+            - { label: "AC Feature 1", name: "acFeat1", widget: "string"}
+            - { label: "AC Feature 2", name: "acFeat2", widget: "string"}
+            - { label: "AC Feature 3", name: "acFeat3", widget: "string"}
+            - { label: "AC Chargers Title", name: "acChargersProduct", widget: "string"}
+            - { label: "AC Description", name: "acDescProduct", widget: "string"} # <--- აქ შევცვალე სახელი
+            - { label: "View Pricing Button", name: "viewPricing", widget: "string"}
+            - { label: "Video Title", name: "videoSectionTitle", widget: "string"}
+            - { label: "Video Text", name: "videoSectionText", widget: "text"}
+            - { label: "Feature 1", name: "feat1", widget: "string"}
+            - { label: "Feature 2", name: "feat2", widget: "string"}
+            - { label: "Feature 3", name: "feat3", widget: "string"}
+            - { label: "App Title", name: "appTitle", widget: "string"}
+            - { label: "App Subtitle", name: "appSubtitle", widget: "text"}
+            - { label: "App Step 1", name: "appStep1Title", widget: "string"}
+            - { label: "App Step 2", name: "appStep2Title", widget: "string"}
           - name: "ka"
             label: "ქართული (KA)"
             widget: "object"
